@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Contact.css">
+
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="https://res.cloudinary.com/w6q3p54a/image/upload/v1785522850/name_logo_dlcgnm.png" alt="">
+            <div>
+                <ul>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li><a href="About.html">About Me</a></li>
+                    <li><a href="portfolio.html#projects">My Projects</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="contactme">
+        <div class="container">
+            <div class="heading">
+                <h1>Contact</h1>
+                <h1>Us</h1>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="725ee095-0bea-4dee-910b-e00633dd9734">
+
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+
+                <input type="email" name="email" placeholder="Your Email" required>
+
+                <textarea id="comment" name="message" placeholder="Enter your message..." required></textarea>
+
+                <button id="btns" type="submit">
+                    SUBMIT FORM
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

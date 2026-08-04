@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title> Pankaj_portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="https://res.cloudinary.com/w6q3p54a/image/upload/v1785522850/name_logo_dlcgnm.png" alt="">
+            <div>
+                <ul id>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li><a href="About.html">About Me</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="fakeheader"></div>
+    <section class="main">
+        <div class="spans">
+            <span>Hi, I'm </span>
+            <span>PANKAJ KUMAR RAJPUT</span>
+            <span id = "typing">Frontend Developer | CSE Student</span>
+            <p>I'm a Computer Science student passionate about
+                Software Engineer. I love solving problems,
+                learning new technologies, and continuously improving my
+                skills. I'm always excited to work on challenging projects
+                that help me grow as a developer.</p>
+
+            <div class="socialmedia">
+                <a href="https://www.linkedin.com/in/pankaj-kumar-rajput-108964381/"><img src="linkdin logo.png"
+                        alt="LinkedIn"></a>
+                <a href="https://github.com/pankajkumar0202"><img src="github logo.png" alt="Github"></a>
+            </div>
+
+            <h2>My Resume</h2>
+
+        </div>
+
+        <div class="secImg">
+            <img src="https://res.cloudinary.com/w6q3p54a/image/upload/v1785523000/circle_photo_drlz8g.png"
+                alt="profile">
+        </div>
+    </section>
+    <div class="second-section" id="projects">
+        <div class="heading">
+            <h1>My</h1>
+            <h1>Project</h1>
+        </div>
+        <div class="project">
+            <a href=""><img
+                    src="https://res.cloudinary.com/w6q3p54a/image/upload/v1785863701/Screenshot_2026-08-04_224220_smucod.png"></a>
+            <img src="Screenshot 2026-03-03 004940.png">
+            <img src="Screenshot 2026-03-03 005305.png">
+            <div class="project2">
+                <img
+                    src="https://res.cloudinary.com/w6q3p54a/image/upload/v1785610130/Screenshot_2026-08-02_001630_clujbb.png">
+                <img src="https://res.cloudinary.com/w6q3p54a/image/upload/v1785610124/Screenshot_2026-08-02_001618_g2d5j7.png"
+                    alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="third-section">
+        <div class="heading">
+            <h1>My</h1>
+            <h1>Platform</h1>
+        </div>
+        <div class="platform">
+            <a href="https://www.linkedin.com/in/pankaj-kumar-rajput-108964381/">
+                <img src="linkdin logo.png" alt="Linkden"></a>
+            <a href="https://leetcode.com/u/Pankajkumar02/"><img src="leetcode logo.png" alt="Leetcode"></a>
+            <a href="https://github.com/pankajkumar0202"><img src="github logo.png" alt="Github"></a>
+            <a href="https://www.hackerrank.com/profile/pankaj476987"><img src="hackerrank logo.avif"
+                    alt="Hackerrank"></a>
+
+            <!-- <img src="https://res.cloudinary.com/w6q3p54a/image/upload/v1785581686/vs_code_logo_hayvtu.jpg" alt="">
+            <img src="https://res.cloudinary.com/w6q3p54a/image/upload/v1785581695/git-icon-logo_qfbbxa.svg"> -->
+
+        </div>
+
+
+    </div>
+    <div class="fourth-section">
+        <div class="heading">
+            <h1>My</h1>
+            <h1>Skills</h1>
+        </div>
+        <div class="skills">
+            <img src="https://res.cloudinary.com/w6q3p54a/image/upload/v1785413427/c_image_mfl2be.png">
+            <img src="java image.png">
+            <img src="C_Logo.png">
+            <img src="html logo.png">
+            <img src="css logo.png">
+            <img src="https://res.cloudinary.com/w6q3p54a/image/upload/v1785581686/vs_code_logo_hayvtu.jpg" alt="">
+            <img src="https://res.cloudinary.com/w6q3p54a/image/upload/v1785581695/git-icon-logo_qfbbxa.svg">
+        </div>
+
+    </div>
+    <div class="footer">
+        <span>Copyright © 2026 Pankaj Kumar Rajput</span>
+        <div class="socialmedia">
+            <a href="https://www.linkedin.com/in/pankaj-kumar-rajput-108964381/"><img src="linkdin logo.png"
+                    alt="LinkedIn"></a>
+            <a href="https://github.com/pankajkumar0202"><img src="github logo.png" alt="Github"></a>
+        </div>
+        <span>Made With ❤️ By Pankaj Kumar Rajput</span>
+    </div>
+
+
+
+    <script>let roles = [
+            "💻 Software Developer",
+            "☁️ Cloud Engineer",
+            "🧠 DSA Enthusiast"
+        ];
+
+        let role = 0;      // Current role
+        let letter = 0;    // Current letter
+
+        function type() {
+
+            // Show current text letter by letter
+            document.getElementById("typing").innerHTML =
+                roles[role].slice(0, letter);
+
+            letter++;
+
+            // If full text is typed
+            if (letter > roles[role].length) {
+
+                // Wait for 2 seconds
+                setTimeout(function () {
+
+                    // Move to next role
+                    role++;
+
+                    // If last role finished, start again
+                    if (role == roles.length) {
+                        role = 0;
+                    }
+
+                    // Start typing from first letter
+                    letter = 0;
+
+                    type();
+
+                }, 2000);
+
+            }
+            else {
+                // Keep typing every 100ms
+                setTimeout(type, 100);
+            }
+
+        }
+        type();
+    </script>
+
+</body>
+
+</html>
