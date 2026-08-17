@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
- 
+
 body,
 html {
     height: 100%;
@@ -16,8 +16,8 @@ html {
 body {
     background-color: rgb(11, 13, 14);
     background-image:
-    linear-gradient(rgba(151, 157, 40, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(83, 138, 180, 0.04) 1px, transparent 1px);
+        linear-gradient(rgba(151, 157, 40, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(83, 138, 180, 0.04) 1px, transparent 1px);
     background-size: 40px 40px;
     background: #0b1118;
     animation: bodyReveal 0.8s ease-out;
@@ -88,16 +88,16 @@ body::after {
 @keyframes starsMove {
     from {
         background-position:
-        10px 20px,
-        50px 80px,
-        100px 30px;
+            10px 20px,
+            50px 80px,
+            100px 30px;
     }
 
     to {
         background-position:
-        100px 120px,
-        180px 160px,
-        250px 200px;
+            100px 120px,
+            180px 160px,
+            250px 200px;
     }
 }
 
@@ -127,7 +127,7 @@ nav img:hover {
 nav ul {
     list-style: none;
     display: flex;
-    width: 38vw;
+    width: 50vw;
     gap: 60px;
     padding: 25px;
     font-size: 20px;
@@ -138,7 +138,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: rgb(246, 248, 249);
-     transition: 0.3s ease;
+    transition: 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -149,19 +149,19 @@ nav ul li a:hover {
     width: 100%;
     height: 60px;
     background-image:
-    linear-gradient(rgba(153, 196, 230, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(83, 138, 180, 0.04) 1px, transparent 1px);
+        linear-gradient(rgba(153, 196, 230, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(83, 138, 180, 0.04) 1px, transparent 1px);
     background-size: 40px 40px;
     background: rgba(0, 0, 0, 0);
     z-index: 1000;
 }
 
-.fifth-section{
+.fifth-section {
     width: 100%;
     height: 100%;
 }
 
-.about-section{
+.about-section {
     width: 75%;
     height: 72%;
     border-radius: 5px;
@@ -194,7 +194,7 @@ nav ul li a:hover {
     color: #983d98;
 }
 
-.about-section p{
+.about-section p {
     font-size: 20px;
     color: white;
     word-spacing: 5px;
@@ -212,6 +212,7 @@ nav ul li a:hover {
         align-items: center;
         flex-direction: column;
     }
+
     nav img {
         width: 55px;
         height: 55px;
@@ -222,7 +223,7 @@ nav ul li a:hover {
         width: auto;
         gap: 25px;
         padding: 15px 5px;
-        font-size: 16px;
+        font-size: 14px;
         justify-content: center;
     }
 

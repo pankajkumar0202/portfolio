@@ -97,9 +97,9 @@ body::after {
 
     to {
         background-position:
-        100px 120px,
-        180px 160px,
-        250px 200px;
+            100px 120px,
+            180px 160px,
+            250px 200px;
     }
 }
 
@@ -209,7 +209,7 @@ section.main {
     font-size: 20px;
     border: 2px solid #983d98;
     background-color: #0e0d0c;
-    box-shadow: 0 0 12px #983d98;
+    box-shadow: 0 0 10px #983d98;
     color: rgb(249, 246, 246);
     padding: 4px 0 0 16px;
 }
@@ -218,8 +218,7 @@ section.main {
     background-color: #983d98;
     color: #0e0d0c;
     border: 2px solid #983d98;
-    box-shadow: 0 0 15px #983d98;
-    transform: scale(1.09);
+    box-shadow: 0 0 25px #983d98;
 }
 
 .secImg {
@@ -230,18 +229,18 @@ section.main {
 }
 
 .secImg img {
-    width: 65%;
-    height: 75vh;
+    width: 75%;
+    height: 60vh;
     position: relative;
-    right: 15vmin;
-    bottom: 80px;
-    filter: drop-shadow(1px 1px 20px #983d98);
+    right: 8vmin;
+    bottom: 30px;
+    filter: drop-shadow(1px 1px 22px #983d98);
     animation: float 2s ease-in-out infinite;
 }
 
 .secImg img:hover {
     transform: scale(1.03);
-    filter: drop-shadow(2px 2px 25px #983d98);
+    filter: drop-shadow(2px 2px 30px #983d98);
 }
 
 
@@ -261,7 +260,8 @@ section.main {
 
 .second-section,
 .third-section,
-.fourth-section {
+.fourth-section,
+.fifth-section {
     width: 95%;
     min-height: 55%;
     border-radius: 5px;
@@ -274,6 +274,88 @@ section.main {
     overflow: hidden;
     scroll-margin: 100px;
     padding: 0 30px 30px 30px;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#education-box {
+    scroll-margin-top: 80px;
+}
+
+.box1,
+.box2,
+.box3 {
+    height: 35vh;
+    width: 25vw;
+    border-radius: 20px;
+    border: 1.5px solid #983d98;
+    box-shadow: 0 0 10px #983d98;
+    color: #983d98;
+    margin-top: 40px;
+    margin-left: 50px;
+    text-align: center;
+    background-color: rgb(11, 13, 14);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 16px;
+}
+
+.box1> :nth-child(2),
+.box2> :nth-child(2),
+.box3> :nth-child(2) {
+    font-weight: bold;
+}
+
+.box1> :nth-child(3),
+.box2> :nth-child(3),
+.box3> :nth-child(3),
+.box1> :nth-child(6),
+.box2> :nth-child(6),
+.box3> :nth-child(6) {
+    color: #ece3ec;
+}
+
+.box1> :nth-child(4),
+.box2> :nth-child(4),
+.box3> :nth-child(4) {
+    font-weight: bold;
+}
+
+.box1> :nth-child(5),
+.box2> :nth-child(5),
+.box3> :nth-child(5) {
+    display: inline-block;
+    width: 120px;
+    height: 4vh;
+    background-color: #983d98;
+    color: rgb(244, 242, 242);
+    padding: 3px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.box1:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #983d98;
+}
+
+.box2:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #983d98;
+}
+
+.box3:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #983d98;
+}
+
+#logo {
+    font-size: 3rem;
+    filter: drop-shadow(rgb(220, 197, 197) 0 0 7px);
 }
 
 .heading {
@@ -388,7 +470,7 @@ section.main {
     box-shadow: 0 0 12px #983d98;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
 
     nav {
         height: auto;
@@ -451,7 +533,7 @@ section.main {
     }
 
     .secImg img {
-        width: 80%;
+        width: 70%;
         height: 50vh;
         right: 5vmin;
         bottom: 20px;
@@ -466,7 +548,7 @@ section.main {
 
     .project img,
     .project2 img {
-         width: 27vw;
+        width: 27vw;
         max-width: 100%;
         height: auto;
         margin-left: 20px;
@@ -480,6 +562,19 @@ section.main {
     .skills img {
         width: 80px;
         height: 80px;
+    }
+     .education {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 38vw;
+        height: 32vh;
+        margin-left: 0;
+        margin-top: 25px;
     }
 }
 
@@ -511,7 +606,7 @@ section.main {
     }
 
     nav ul li a {
-        font-size: 15px;
+        font-size: 13px;
     }
 
 
@@ -569,10 +664,10 @@ section.main {
     }
 
     .secImg img {
-        width: 70%;
-        height: 50vh;
+        width: 80%;
+        height: 40vh;
         position: relative;
-        left: 10px;
+        left: 5px;
     }
 
     .second-section,
@@ -597,22 +692,22 @@ section.main {
         flex-direction: column;
     }
 
-.project,
-.project2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .project,
+    .project2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.project img,
-.project2 img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin: 25px 0;
-    display: block;
-    box-sizing: border-box;
-}
+    .project img,
+    .project2 img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 25px 0;
+        display: block;
+        box-sizing: border-box;
+    }
 
     .platform {
         display: flex;
@@ -640,6 +735,25 @@ section.main {
         width: 75px;
         height: 75px;
         margin: 20px 0;
+    }
+     .education {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 70vw;
+        height: auto;
+        min-height: 260px;
+        margin: 0;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+
+    #logo {
+        font-size: 2.5rem;
     }
 
     .footer {
@@ -672,7 +786,7 @@ section.main {
     }
 
     nav ul li a {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     section.main {
@@ -720,8 +834,8 @@ section.main {
     }
 
     .secImg img {
-        width: 77%;
-        height: 60vh;
+        width: 80%;
+        height: 37vh;
     }
 
     .second-section,
@@ -737,22 +851,22 @@ section.main {
         gap: 5px;
     }
 
-.project,
-.project2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .project,
+    .project2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.project img,
-.project2 img {
-    width: 95%;
-    max-width: 400px;
-    height: auto;
-    margin: 25px 0;
-    display: block;
-    box-sizing: border-box;
-}
+    .project img,
+    .project2 img {
+        width: 95%;
+        max-width: 400px;
+        height: auto;
+        margin: 25px 0;
+        display: block;
+        box-sizing: border-box;
+    }
 
     .platform {
         gap: 15px;
@@ -774,6 +888,33 @@ section.main {
         height: 60px;
         margin: 15px 5px;
     }
+     .education {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 85vw;
+        min-height: 250px;
+        font-size: 14px;
+        gap: 0.5rem;
+        border-radius: 15px;
+    }
+
+    .box1 > :nth-child(5),
+    .box2 > :nth-child(5),
+    .box3 > :nth-child(5) {
+        width: 100px;
+        height: auto;
+        padding: 5px;
+    }
+
+    #logo {
+        font-size: 2.2rem;
+    }
 
     .footer {
         width: 94%;
@@ -783,5 +924,4 @@ section.main {
     .footer span {
         font-size: 11px;
     }
-
 }
