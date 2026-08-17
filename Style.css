@@ -281,9 +281,6 @@ section.main {
     justify-content: center;
     align-items: center;
 }
-#education-box {
-    scroll-margin-top: 80px;
-}
 
 .box1,
 .box2,
@@ -897,7 +894,7 @@ section.main {
     .box1,
     .box2,
     .box3 {
-        width: 85vw;
+        width: 75vw;
         min-height: 250px;
         font-size: 14px;
         gap: 0.5rem;
