@@ -199,14 +199,18 @@ section.main {
     font-weight: 300;
     line-height: 27px;
 }
+.spans a{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none; 
+    
+}
 
 .spans h2 {
     height: 6vh;
-    width: 10vw;
+    width: 12vw;
     border-radius: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
     border: 2px solid #983d98;
     background-color: #0e0d0c;
     box-shadow: 0 0 10px #983d98;
@@ -229,11 +233,10 @@ section.main {
 }
 
 .secImg img {
-    width: 75%;
-    height: 60vh;
+    width: 90%;
+    height: 70vh;
     position: relative;
-    right: 8vmin;
-    bottom: 30px;
+    bottom: 50px;
     filter: drop-shadow(1px 1px 22px #983d98);
     animation: float 2s ease-in-out infinite;
 }
@@ -270,7 +273,6 @@ section.main {
     border: 2px solid #983d98;
     box-shadow: 0 0 15px #983d98;
     border-radius: 40px;
-    background-color: #111A25;
     overflow: hidden;
     scroll-margin: 100px;
     padding: 0 30px 30px 30px;
@@ -299,6 +301,7 @@ section.main {
     flex-direction: column;
     gap: 0.6rem;
     font-size: 16px;
+    transition: 0.3s ease-in-out;
 }
 
 .box1> :nth-child(2),
@@ -336,17 +339,17 @@ section.main {
 }
 
 .box1:hover {
-    transform: scale(1.02);
+    transform: scale(1.04);
     box-shadow: 0 0 15px #983d98;
 }
 
 .box2:hover {
-    transform: scale(1.02);
+    transform: scale(1.04);
     box-shadow: 0 0 15px #983d98;
 }
 
 .box3:hover {
-    transform: scale(1.02);
+    transform: scale(1.04);
     box-shadow: 0 0 15px #983d98;
 }
 
@@ -377,6 +380,7 @@ section.main {
     width: 400px;
     border-radius: 20px;
     border: 1.5px solid #983d98;
+    transition: 0.3s ease-in-out;
     box-shadow: 0 0 10px #983d98;
     margin-top: 40px;
     margin-left: 50px;
@@ -418,6 +422,7 @@ section.main {
     transform: scale(1.15);
     border: 2px solid #983d98;
     box-shadow: 0 0 18px #983d98;
+    transition: 0.3s ease-in-out;
 }
 
 .skills img {
@@ -426,6 +431,7 @@ section.main {
     margin-left: 140px;
     margin-top: 60px;
     border-radius: 20px;
+    transition: 0.3s ease-in-out;
     filter: drop-shadow(1px 1px 5px #983d98);
 }
 
@@ -444,7 +450,6 @@ section.main {
     border-radius: 20px;
     border: 2px solid #983d98;
     box-shadow: 0 0 15px #983d98;
-    background-color: #111A25;
 }
 
 .footer span {
@@ -520,19 +525,19 @@ section.main {
     }
 
     .spans h2 {
-        width: 140px;
+        width: 170px;
         height: 45px;
         font-size: 17px;
     }
 
     .secImg {
-        width: 45%;
+        width:100%;
     }
 
     .secImg img {
-        width: 70%;
-        height: 50vh;
-        right: 5vmin;
+        width: 100%;
+        height: 45vh;
+        right: -6vmin;
         bottom: 20px;
     }
 
@@ -662,7 +667,7 @@ section.main {
 
     .secImg img {
         width: 80%;
-        height: 40vh;
+        height: 60vh;
         position: relative;
         left: 5px;
     }
@@ -831,8 +836,8 @@ section.main {
     }
 
     .secImg img {
-        width: 80%;
-        height: 37vh;
+        width: 97%;
+        height: 48vh;
     }
 
     .second-section,
