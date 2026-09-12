@@ -471,74 +471,248 @@ section.main {
     transform: scale(1.09);
     box-shadow: 0 0 12px #983d98;
 }
+@media (max-width: 1400px) {
+
+    nav {
+        width: 100%;
+        height: auto;
+        padding: 10px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    nav img {
+        width: 65px;
+        height: 65px;
+        margin: 5px;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    section.main {
+        width: 100%;
+        min-height: 650px;
+        height: auto;
+        padding: 50px 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .spans {
+        width: 52%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .main > div :nth-child(1) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .main > div :nth-child(2) {
+        font-size: 44px;
+        line-height: 54px;
+    }
+
+    .main > div :nth-child(3) {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .spans p {
+        width: 100%;
+        max-width: 550px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .spans h2 {
+        width: 180px;
+        height: 50px;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .secImg {
+        width: 48%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        box-sizing: border-box;
+    }
+
+    .secImg img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        max-height: 500px;
+        object-fit: contain;
+        position: static;
+        display: block;
+        margin: auto;
+    }
+
+    .second-section,
+    .third-section,
+    .fourth-section {
+        width: 95%;
+        min-height: auto;
+        padding: 0 25px 30px;
+        box-sizing: border-box;
+    }
+
+    .project,
+    .project2 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project img,
+    .project2 img {
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .platform {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .platform img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .skills img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .education {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        box-sizing: border-box;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 38vw;
+        max-width: 500px;
+        height: auto;
+        min-height: 280px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .footer {
+        width: 95%;
+        box-sizing: border-box;
+    }
+}
+
 
 @media (max-width: 1025px) {
 
     nav {
-        height: auto;
-        gap: 30px;
-        padding: 10px 20px;
-        align-items: center;
-        justify-content: space-between;
+        padding: 10px 25px;
     }
 
     nav img {
         width: 60px;
         height: 60px;
-        margin: 5px;
     }
 
     nav ul {
-        width: auto;
-        gap: 25px;
-        padding: 15px;
-        font-size: 17px;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
     }
 
     section.main {
-        height: auto;
-        min-height: 70vh;
-        padding: 40px 30px;
+        min-height: 650px;
+        padding: 45px 35px;
+        gap: 20px;
     }
 
     .spans {
-        width: 55%;
-        padding: 0 20px;
+        width: 52%;
+        padding: 0 10px;
     }
 
-    .main>div :nth-child(1) {
+    .main > div :nth-child(1) {
         font-size: 22px;
+        line-height: 30px;
     }
 
-    .main>div :nth-child(2) {
-        font-size: 38px;
+    .main > div :nth-child(2) {
+        font-size: 40px;
+        line-height: 50px;
     }
 
-    .main>div :nth-child(3) {
+    .main > div :nth-child(3) {
         font-size: 24px;
+        line-height: 34px;
     }
 
     .spans p {
-        max-width: 95%;
         font-size: 15px;
         line-height: 24px;
     }
 
-    .spans h2 {
-        width: 170px;
-        height: 45px;
-        font-size: 17px;
-    }
-
     .secImg {
-        width:100%;
+        width: 48%;
+        height: 450px;
     }
 
     .secImg img {
-        width: 100%;
-        height: 45vh;
-        right: -6vmin;
-        bottom: 20px;
+        max-width: 450px;
+        max-height: 450px;
     }
 
     .second-section,
@@ -548,48 +722,26 @@ section.main {
         padding: 0 20px 25px;
     }
 
-    .project img,
-    .project2 img {
-        width: 27vw;
-        max-width: 100%;
-        height: auto;
-        margin-left: 20px;
-    }
-
-    .platform img {
-        width: 110px;
-        height: 110px;
-    }
-
-    .skills img {
-        width: 80px;
-        height: 80px;
-    }
-     .education {
-        flex-wrap: wrap;
-        gap: 25px;
-    }
-
     .box1,
     .box2,
     .box3 {
-        width: 38vw;
-        height: 32vh;
-        margin-left: 0;
-        margin-top: 25px;
+        width: 42vw;
+        min-height: 270px;
     }
 }
+
 
 @media (max-width: 768px) {
 
     nav {
         width: 100%;
         height: auto;
-        flex-direction: column;
-        gap: 10px;
         padding: 10px;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        overflow: visible;
+        gap: 10px;
+        box-sizing: border-box;
     }
 
     nav img {
@@ -600,98 +752,94 @@ section.main {
 
     nav ul {
         width: 100%;
-        justify-content: center;
-        gap: 20px;
-        padding: 10px 5px;
-        font-size: 15px;
+        display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px 5px;
+        box-sizing: border-box;
     }
 
     nav ul li a {
         font-size: 13px;
     }
 
-
     section.main {
         width: 100%;
-        height: auto;
         min-height: auto;
+        height: auto;
         padding: 40px 20px;
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: center;
+        gap: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     .spans {
         width: 100%;
         padding: 0;
         align-items: center;
+        justify-content: center;
         text-align: center;
-        gap: 12px;
+        box-sizing: border-box;
     }
 
-    .main>div :nth-child(1) {
+    .main > div :nth-child(1) {
         font-size: 19px;
         line-height: 25px;
     }
 
-    .main>div :nth-child(2) {
+    .main > div :nth-child(2) {
         font-size: 32px;
         line-height: 40px;
     }
 
-    .main>div :nth-child(3) {
+    .main > div :nth-child(3) {
         font-size: 21px;
         line-height: 30px;
     }
 
     .spans p {
-        max-width: 100%;
+        width: 100%;
+        max-width: 600px;
         font-size: 14px;
         line-height: 23px;
     }
 
     .spans h2 {
-        width: 30vw;
-        padding: 2vmin;
+        width: 140px;
+        height: 45px;
         font-size: 14px;
     }
 
-
     .secImg {
         width: 100%;
-        height: 400px;
+        height: 350px;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
     }
 
     .secImg img {
         width: 80%;
-        height: 60vh;
-        position: relative;
-        left: 5px;
+        max-width: 400px;
+        height: auto;
+        max-height: 350px;
+        object-fit: contain;
+        position: static;
+        margin: auto;
     }
 
     .second-section,
     .third-section,
     .fourth-section {
         width: 92%;
-        min-height: auto;
+        padding: 0 15px 25px;
         margin-bottom: 25px;
         border-radius: 25px;
-        padding: 0 15px 25px;
-    }
-
-    .heading {
-        font-size: 16px;
-        padding: 15px 5px;
-        gap: 8px;
-        text-align: center;
-    }
-
-    .project {
-        display: flex;
-        flex-direction: column;
     }
 
     .project,
@@ -707,39 +855,33 @@ section.main {
         max-width: 400px;
         height: auto;
         margin: 25px 0;
-        display: block;
-        box-sizing: border-box;
     }
 
-    .platform {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-    }
-
-    .platform img {
-        width: 100px;
-        height: 100px;
-        margin: 20px 0;
-    }
-
+    .platform,
     .skills {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 25px;
+        gap: 20px;
+    }
+
+    .platform img {
+        width: 100px;
+        height: 100px;
+        margin: 15px 0;
     }
 
     .skills img {
         width: 75px;
         height: 75px;
-        margin: 20px 0;
+        margin: 15px 0;
     }
-     .education {
+
+    .education {
+        width: 100%;
         flex-direction: column;
+        align-items: center;
         gap: 25px;
     }
 
@@ -751,7 +893,6 @@ section.main {
         min-height: 260px;
         margin: 0;
         padding: 20px 10px;
-        box-sizing: border-box;
     }
 
     #logo {
@@ -763,6 +904,7 @@ section.main {
         min-height: auto;
         padding: 15px;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
         gap: 10px;
         text-align: center;
@@ -774,7 +916,13 @@ section.main {
     }
 }
 
+
 @media (max-width: 480px) {
+
+    nav {
+        padding: 8px;
+        gap: 8px;
+    }
 
     nav img {
         width: 50px;
@@ -782,9 +930,8 @@ section.main {
     }
 
     nav ul {
-        gap: 12px;
+        gap: 10px;
         padding: 8px 2px;
-        flex-wrap: wrap;
     }
 
     nav ul li a {
@@ -792,7 +939,9 @@ section.main {
     }
 
     section.main {
-        padding: 15px;
+        width: 100%;
+        padding: 20px 15px;
+        gap: 15px;
     }
 
     .spans {
@@ -800,17 +949,19 @@ section.main {
         padding: 0;
     }
 
-    .main>div :nth-child(1) {
+    .main > div :nth-child(1) {
         font-size: 17px;
+        line-height: 23px;
     }
 
-    .main>div :nth-child(2) {
+    .main > div :nth-child(2) {
         font-size: 27px;
         line-height: 35px;
     }
 
-    .main>div :nth-child(3) {
+    .main > div :nth-child(3) {
         font-size: 18px;
+        line-height: 26px;
     }
 
     .spans p {
@@ -819,38 +970,41 @@ section.main {
     }
 
     .spans h2 {
-        width: 30vw;
-        padding: 2vmin;
+        width: 130px;
+        height: 42px;
         font-size: 14px;
     }
 
     .socialmedia img {
         width: 30px;
         height: 30px;
-        margin: auto;
     }
 
     .secImg {
         width: 100%;
-        height: 320px;
+        height: 300px;
     }
 
     .secImg img {
-        width: 97%;
-        height: 48vh;
+        width: 90%;
+        max-width: 350px;
+        max-height: 300px;
+        height: auto;
+        object-fit: contain;
+        position: static;
     }
 
     .second-section,
     .third-section,
     .fourth-section {
         width: 94%;
-        border-radius: 20px;
         padding: 0 10px 20px;
+        border-radius: 20px;
     }
 
     .heading {
         font-size: 14px;
-        gap: 5px;
+        padding: 12px 5px;
     }
 
     .project,
@@ -866,8 +1020,6 @@ section.main {
         max-width: 400px;
         height: auto;
         margin: 25px 0;
-        display: block;
-        box-sizing: border-box;
     }
 
     .platform {
@@ -877,8 +1029,7 @@ section.main {
     .platform img {
         width: 75px;
         height: 75px;
-        margin: 15px 5px;
-        border-radius: 18px;
+        margin: 10px 5px;
     }
 
     .skills {
@@ -888,12 +1039,12 @@ section.main {
     .skills img {
         width: 60px;
         height: 60px;
-        margin: 15px 5px;
+        margin: 10px 5px;
     }
-     .education {
+
+    .education {
         width: 100%;
         padding: 10px;
-        box-sizing: border-box;
     }
 
     .box1,
@@ -902,8 +1053,7 @@ section.main {
         width: 75vw;
         min-height: 250px;
         font-size: 14px;
-        gap: 0.5rem;
-        border-radius: 15px;
+        padding: 15px 10px;
     }
 
     .box1 > :nth-child(5),
